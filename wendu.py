@@ -1,8 +1,10 @@
+# -*- coding: utf-8 -*-
 import requests
 import mysql.connector
 from datetime import datetime
 import json
-# coding=utf-8
+
+
 
 # 获取当前时间
 now_time = datetime.now()  
