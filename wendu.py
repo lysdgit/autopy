@@ -11,7 +11,7 @@ now_time = datetime.now()
 # print(now_time)
 
 #获取 api
-url = "https://devapi.qweather.com/v7/weather/now?location=101220307&key=fb7f4e2fb9a348bcaee410b2e46d439f"
+url = "https://devapi.qweather.com/v7/weather/now?location=101190407&key=fb7f4e2fb9a348bcaee410b2e46d439f"
 response = requests.get(url) 
 data_dict = response.json()
 # print(data_dict)
@@ -64,7 +64,7 @@ cnx = mysql.connector.connect(
 cursor = cnx.cursor()
 
 # 执行插入操作
-insert_query  = "INSERT INTO wendu (temp, feelsLike, icon, text, wind360, windDir, windScale, windSpeed, humidity, precip, pressure, vis, cloud, dew, now_time) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
+insert_query  = "INSERT INTO sztq (temp, feelsLike, icon, text, wind360, windDir, windScale, windSpeed, humidity, precip, pressure, vis, cloud, dew, now_time) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)"
 data = (temp, feels_like, icon, text, wind_360, wind_dir, wind_scale, wind_speed, humidity, precip, pressure, vis, cloud, dew, now_time)
 cursor.execute(insert_query, data)
 
