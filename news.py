@@ -7,7 +7,7 @@ from lxml import etree
 if __name__ == '__main__':
     url = 'https://www.cls.cn/api/sw?app=CailianpressWeb&os=web&sv=7.7.5&sign=bf0f367462d8cd70917ba5eab3853bce'
     headers = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/110.0"}
-    data = {"type": "telegram", "keyword": "你需要知道的隔夜全球新闻", "page": 0, "rn": 20, "os": "web", "sv": "7.7.5",
+    data = {"type": "telegram", "keyword": "你需要知道的隔夜全球要闻", "page": 0, "rn": 20, "os": "web", "sv": "7.7.5",
             "app": "CailianpressWeb"}
     response = requests.post(url=url, headers=headers, data=data)
     news = json.loads(response.text)['data']['telegram']['data'][0]['descr']
