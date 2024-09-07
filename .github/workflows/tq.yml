@@ -34,6 +34,6 @@ jobs:
         python wendu.py
       # env:
           # TQ_Token: ${{ secrets.HF_TQ_Token }}
-          #   APP_SECRET: ${{ secrets.APP_SECRET }}
+      #   APP_SECRET: ${{ secrets.APP_SECRET }}
       #   OPEN_ID: ${{ secrets.OPEN_ID }}
       #   TEMPLATE_ID: ${{ secrets.TEMPLATE_ID }}
